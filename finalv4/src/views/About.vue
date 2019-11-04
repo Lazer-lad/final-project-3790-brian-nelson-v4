@@ -7,17 +7,21 @@
 <v-col cols='3' v-for="ship in starships" :key="ship.model">
 <v-card>
   <v-card-title>
-    <div>
-      <h2>
-        {{ ship.name }} <p>ship name</p>
-      </h2>
-      <div> {{ ship.model }} </div>
-      <p> {{ ship.manufacturer }} </p>
     
-    </div>
-  </v-card-title>
+      
+        <p class="text-no-wrap">{{ ship.name }}</p>
+      
+        </v-card-title>
+
+      <v-card-subtitle>
+        <div> {{ ship.model }} </div>
+      </v-card-subtitle>
+      <v-card-text> {{ ship.manufacturer }} </v-card-text>
+    
+    
+  
   <v-card-action>
-    <v-btn @click="showing = false">hide</v-btn>
+    <v-btn class='mx2' fab dark small color="primary" @click="showing = false"><v-icon dark>mdi-minus</v-icon></v-btn>
   </v-card-action>
 </v-card>
 </v-col>
