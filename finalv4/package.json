@@ -1,5 +1,5 @@
 {
-  "name": "finalv3",
+  "name": "finalv4",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -52,9 +52,5 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ],
-  "description": "## Project setup ``` yarn install ```",
-  "main": "babel.config.js",
-  "author": "",
-  "license": "ISC"
+  ]
 }
