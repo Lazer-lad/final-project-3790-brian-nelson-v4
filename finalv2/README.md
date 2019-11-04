@@ -1,4 +1,4 @@
-# finalprojectv1
+# finalv2
 
 ## Project setup
 ```

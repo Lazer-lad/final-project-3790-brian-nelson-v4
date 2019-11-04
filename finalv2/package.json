@@ -1,5 +1,5 @@
 {
-  "name": "finalprojectv1",
+  "name": "finalv2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,12 +19,10 @@
     "@vue/cli-plugin-router": "^4.0.0",
     "@vue/cli-plugin-vuex": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
-    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
-    "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
-    "prettier": "^1.18.2",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -34,7 +32,7 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "@vue/prettier"
+      "@vue/standard"
     ],
     "rules": {},
     "parserOptions": {
