@@ -1,24 +1,25 @@
 <template>
-  <v-app>
-    <v-app-bar app color="secondary" dark>
-      <div id="app">{{ info }}</div>
-    </v-app-bar>
-
-    <v-content></v-content>
-    <About></About>
-  </v-app>
+<div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+      <router-link to="/form">form</router-link>
+    </div>
+    <HelloWorld/>
+    <router-view/>
+  </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld';
-import About from "./views/About";
+import HelloWorld from './components/HelloWorld';
+
 
 export default {
   name: "App",
 
   components: {
-    //HelloWorld,
-    About,
+    HelloWorld,
+    
   },
 
   data: () => ({

@@ -1,3 +1,5 @@
+
+
 <template>
 <v-container>
   <v-row>
@@ -6,9 +8,9 @@
 <v-card>
   <v-card-title>
     <div>
-      <h3>
-        {{ ship.name }}
-      </h3>
+      <h2>
+        {{ ship.name }} <p>ship name</p>
+      </h2>
       <div> {{ ship.model }} </div>
       <p> {{ ship.manufacturer }} </p>
     
@@ -28,8 +30,10 @@
 import { aboutMixin } from './aboutmixintest'
 
 export default {
-  data() { return 
+  data() { 
+    return {
     showing: false
+    }
   },
   mixins: [aboutMixin]
   
